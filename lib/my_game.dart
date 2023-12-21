@@ -30,8 +30,11 @@ class MyGame extends FlameGame with TapCallbacks {
     add(background);
 
     fish
+      
       ..sprite = await loadSprite('blue_fish.png')
-      ..size = Vector2(300, 300);
+      ..x = 20
+      ..y = 200
+      ..size = Vector2(100, 100);
 
     add(fish);
 
